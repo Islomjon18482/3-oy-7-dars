@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Inter;
+}
+@import "./header";
+@import "./hero";
+
+@media screen and (max-width:1024px) {
+    .background__color{
+        display: block;
+    }
+    .header__footer__contenier{
+        display: none;
+    }
+    .menu__tablet{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+    .header__buttom__contenier{
+        align-items: normal;
+        flex-direction: column-reverse;
+    }
+    .header__top__contenier{
+        max-width: 896px;
+    }
+    body{
+        background-position: 1266px;
+    }
+    .header__buttom__text{
+        max-width: 896px;
+        .header__button{
+            margin: 0px auto;
+        }
+    }
+    h2{
+        width: 896px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 67.20px;
+        font-size: 30px;
+    }
+    P{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header__buttom__button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header__buttom__img {
+        img{
+            width: 575px; height: 632px;
+        }
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:430px){
+    .menu__phone{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .header__top__button{
+        display: none;
+    }
+    .menu__tablet{
+        display: none;
+    }
+    .header__buttom__img {
+        img{
+            width: 295.16px; height: 324.42px;
+        }
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .background__color{
+    display: none;
+    }
+    header{
+        background-image: none;
+    }
+
+    .header__buttom__text {
+        .header__heading h2{
+            h2{
+                color: black;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 48px;
+                word-wrap: break-word;
+            }
+           }
+    }
+    p{
+        text-align: center;
+    }
+}
